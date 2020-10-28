@@ -19,7 +19,7 @@ let currentYear = `2220`
 let birthYear = `1913`
 let age = currentYear-birthYear
 
-console.log(`They are ${age} years old`)
+console.log(`The year is ${currentYear}. Since you were born in ${birthYear}, that makes you ${age} years old`)
 
 //EXERCISE 3: The Lifetime Supply Calculator
 //Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more! Store your current age into a variable. Store a maximum age into a variable. Store an estimated amount per day (as a number). Calculate how many you would eat total for the rest of your life. Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".
@@ -29,7 +29,7 @@ let maximumAge = `233`
 let amountPerDay = `75`
 let lifetimeSupply = (maximumAge - myAge) *75
 
-console.log(`You will need ${lifetimeSupply} to last you until the ripe old age of ${maximumAge}`)
+console.log(` For a lifetime supply of corncobs, you will need ${lifetimeSupply} to last you until the ripe old age of ${maximumAge}`)
 
 //EXERCISE 4: The Geometrizer
 //Calculate properties of a circle, using the definitions here. Store a radius into a variable. Calculate the circumference based on the radius, and output "The circumference is NN". Calculate the area based on the radius, and output "The area is NN".
@@ -39,7 +39,7 @@ let pi = `3.14159`
 let circumference = 2*(pi*radius)
 let area = pi*radius*radius
 
-console.log(`The circumference is ${circumference}`)
+console.log(`If the radius of a circle is ${radius} and the circumference of the circle is ${circumference},the area is ${area}.`)
 console.log(`The area is ${area}`)
 
 //EXERCISE 5: The Temperature Converter
@@ -65,7 +65,7 @@ function squareNumber (num) {
 
 
 let theResult = squareNumber(3) 
-console.log(`The root of the number is: ${theResult}`)
+console.log(`The square of the number 3 is: ${theResult}`)
 
 
 // EXERCISE 2
@@ -138,6 +138,62 @@ function makeItWork (num) {
 let num = 10
 let runIt = makeItWork(num)
 console.log(`Half of ${num}cm is: ${runIt[0]}cm. When you square it, it looks like this: ${runIt[1]}cm. Taking the square, it's area is: ${runIt[2].toFixed(2)}cm. Which is about: ${runIt[3].toFixed(2)}% of that total area.`)
+
+
+
+/* LAB 3 Manipulating The HTML with JAVASCRIPT */
+
+
+/* EXERCISE 1 */
+let fortune = document.querySelector(`#one`)
+fortune.textContent = `You will be a ${jobTitile} in ${geoLocation}, making $${annualSalary} for ${companyName}.`
+
+
+/*EXERCISE 2*/
+let cradle = document.querySelector(`#two`)
+cradle.textContent = `The year is ${currentYear}. Since you were born in ${birthYear}, that makes you ${age} years old.`
+
+
+/*EXERCISE 3*/
+
+let horde = document.querySelector(`#three`)
+horde.textContent = ` For a lifetime supply of corncobs, you will need ${lifetimeSupply} to last you until the ripe old age of ${maximumAge}.`
+
+
+/*EXERCISE 4*/
+
+let loop = document.querySelector(`#four`)
+loop.textContent = `If the radius of a circle is ${radius} and the circumference of the circle is ${circumference},the area is ${area}.`
+
+/*EXERCISE 5*/
+
+let feels = document.querySelector(`#five`)
+feels.textContent = `${celsius}°C is ${farenheit}°F". ${temperature}°F is ${conversion}°C.`
+
+/*EXERCISE 6*/
+
+let simple = document.querySelector(`#six`)
+simple.textContent = `The square of the number 3 is: ${theResult}`
+
+/*EXERCISE 7*/
+
+let halfer = document.querySelector(`#seven`)
+halfer.textContent = `Half of ${initialNum} is: ${theAnswer} `
+
+/*EXERCISE 8*/
+
+let percy = document.querySelector(`#eight`)
+percy.textContent = `${numOne} is ${perOf}% of ${numTwo}`
+
+/*EXERCISE 9*/
+
+let roundy = document.querySelector(`#nine`)
+roundy.textContent = `The area for a circle with a radius of ${rad}cm is ${wholeNum}cm`
+
+/*EXERCISE 10*/
+
+let finalize = document.querySelector(`#ten`)
+finalize.textContent = `Half of ${num}cm is: ${runIt[0]}cm. When you square it, it looks like this: ${runIt[1]}cm. Taking the square, it's area is: ${runIt[2].toFixed(2)}cm. Which is about: ${runIt[3].toFixed(2)}% of that total area.`
 
 
 
